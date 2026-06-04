@@ -848,9 +848,6 @@
             "name": "MAIN"
         },
         {
-            "name": "jeff"
-        },
-        {
             "name": "BRB..."
         },
         {
@@ -885,6 +882,9 @@
         },
         {
             "name": "Blank"
+        },
+        {
+            "name": "jeff"
         }
     ],
     "current_scene": "jeff",
@@ -893,6 +893,18 @@
     "current_transition": "Fade",
     "transition_duration": 300,
     "transitions": [
+        {
+            "name": "Slide",
+            "id": "slide_transition",
+            "settings": {
+                "direction": "left"
+            }
+        },
+        {
+            "name": "Luma Wipe",
+            "id": "wipe_transition",
+            "settings": {}
+        },
         {
             "name": "Lower Third Stinger",
             "id": "obs_stinger_transition",
@@ -903,23 +915,11 @@
             }
         },
         {
-            "name": "Luma Wipe",
-            "id": "wipe_transition",
-            "settings": {}
-        },
-        {
             "name": "PHL_STINGER",
             "id": "obs_stinger_transition",
             "settings": {
                 "path": "C:/Users/Ben/Downloads/PHL Season 3-20260112T195428Z-1-001/PHL Season 3/OBS/Videos/PHLS3_Stinger2.mov",
                 "transition_point": 1000
-            }
-        },
-        {
-            "name": "Slide",
-            "id": "slide_transition",
-            "settings": {
-                "direction": "left"
             }
         }
     ],
@@ -949,7 +949,7 @@
     "saved_projectors": [],
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -9,
+    "scaling_level": -25,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
@@ -1387,14 +1387,14 @@
                 "path": "C:/Users/Ben/Downloads/PHL Season 3-20260112T195428Z-1-001/PHL Season 3/OBS/Scene/Scripts/periodCleaner.lua",
                 "settings": {
                     "input_file_path": "C:/Program Files (x86)/Steam/steamapps/common/Puck/textfiles/period_name.txt",
-                    "output_file_path": "C:/Users/Ben/Desktop/PHL Season 4/OBS/Scene/Scripts/period_name_clean.txt"
+                    "output_file_path": "C:/Users/Ben/Documents/GitHub/phlobs/PHL Season 4/OBS/Scene/Scripts/period_name_clean.txt"
                 }
             },
             {
                 "path": "C:/Users/Ben/Desktop/PHL Season 4/OBS/Scene/Scripts/s4teams.lua",
                 "settings": {
                     "refresh_tricodes_hotkey": [],
-                    "txt_file_path": "C:/Users/Ben/Desktop/PHL Season 4/teamSelect.txt"
+                    "txt_file_path": "C:/Users/Ben/Documents/GitHub/phlobs/PHL Season 4/teamSelect.txt"
                 }
             },
             {
@@ -2213,7 +2213,7 @@
                     {
                         "name": "MTLlogo2",
                         "source_uuid": "f27f1343-d9e8-4505-a3c2-0d4141f7a8c4",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3478,7 +3478,7 @@
                     {
                         "name": "BGPlogo 2",
                         "source_uuid": "48939f03-026c-4c58-826c-404ed449068e",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3676,7 +3676,7 @@
                     {
                         "name": "MTLbug2",
                         "source_uuid": "98a21a29-1799-4512-acf1-8e612676bfdd",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3786,7 +3786,7 @@
                     {
                         "name": "BGPbug 2",
                         "source_uuid": "a0dfd812-aa2e-44c0-9e50-2f67638023e1",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5323,7 +5323,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -5472,7 +5472,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -7768,7 +7768,7 @@
                     {
                         "name": "BGPlogo",
                         "source_uuid": "2e6ea492-f237-4d54-bed8-d25909aae9fa",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -9143,7 +9143,7 @@
                     {
                         "name": "ALBlogo",
                         "source_uuid": "097c3fb6-86d2-4de0-8ff3-2d4207073272",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -9561,7 +9561,7 @@
                     {
                         "name": "BGPbug",
                         "source_uuid": "73895802-ff4d-48f5-a224-98d36c9cdcea",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -10771,7 +10771,7 @@
                     {
                         "name": "ALBbug",
                         "source_uuid": "6cc0b0ee-bcc1-424d-a445-22ec678d100d",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -11189,7 +11189,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": false,
+                    "enabled": true,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -11220,7 +11220,7 @@
                     "flags": 0,
                     "volume": 1.0,
                     "balance": 0.5,
-                    "enabled": true,
+                    "enabled": false,
                     "muted": false,
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -12115,7 +12115,7 @@
         {
             "prev_ver": 536936448,
             "name": "jeff",
-            "uuid": "057ae159-bcee-431f-9136-4f09eefc4785",
+            "uuid": "6a0d4624-a109-41be-9dd8-adee1891cb05",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
@@ -12124,7 +12124,7 @@
                 "items": [
                     {
                         "name": "jeffimage",
-                        "source_uuid": "f78f5d96-47d3-4610-b71b-f2f59ab4d60b",
+                        "source_uuid": "fd4b038e-2643-4ae2-945c-58289bcd07b0",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -12143,12 +12143,12 @@
                         "id": 1,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 885.0,
-                            "y": 303.0
+                            "x": 770.0,
+                            "y": 340.0
                         },
                         "pos_rel": {
-                            "x": -0.1388888955116272,
-                            "y": -0.43888890743255615
+                            "x": -0.35185185074806213,
+                            "y": -0.37037038803100586
                         },
                         "scale": {
                             "x": 1.0,
@@ -12204,7 +12204,7 @@
         {
             "prev_ver": 536936448,
             "name": "jeffimage",
-            "uuid": "f78f5d96-47d3-4610-b71b-f2f59ab4d60b",
+            "uuid": "fd4b038e-2643-4ae2-945c-58289bcd07b0",
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
